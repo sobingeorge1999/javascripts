@@ -1,6 +1,15 @@
 // map,filter,reduce,some,sort,push,includes,forEach
 
-// var arr=[2,3,1,4,3]
+var arr=[2,3,1,4,3]
+// reduce has two parameters and sort also
+// to get sum of this array we use reduce 
+
+console.log(arr.reduce((n1,n2)=>n1+n2));
+
+// to find max  
+
+console.log(arr.reduce((n1,n2)=>n1>n2?n1:n2));
+
 // to find squares
 // map method -> to perform a specific function to all objects
 
@@ -37,3 +46,15 @@ console.log(ar1);
 console.log(ar1.includes(2));
 
 // some -> return boolean 
+
+var arry=[1,3,24,3]
+arry.forEach(n=>console.log(n))
+
+
+// map -> to perform a specific func on all object
+// filter -> 
+// sort 
+// some -> return boolen to check items 
+// reduce -> to take a value max,min,sum
+// foreach -> to take one by one
+// push -> add elements 

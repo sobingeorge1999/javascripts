@@ -6,24 +6,34 @@ var foods=[
     ['102','rice',200,40],
 
 ]
+
+
+
 // print all dishes names
 
 
-var foodname=foods.map(dish=>dish[1])
-console.log(foodname);
+// var foodname=foods.map(dish=>dish[1])
+// console.log(foodname);
 
-foods.map(dish=>dish[1]).forEach(dish_name=>console.log(dish_name))
+// foods.map(dish=>dish[1]).forEach(dish_name=>console.log(dish_name))
 
 // print all availble dishes
-var availbedish=foods.filter(ava=>ava[3]>0)
-console.log(availbedish);
+// var availbedish=foods.filter(ava=>ava[3]>0)
+// console.log(availbedish);
 
-foods.filter(ava=>ava[3]>0).forEach(dish=>console.log(dish))
+// foods.filter(ava=>ava[3]>0).forEach(dish=>console.log(dish))
 
-// print dosa details
-foods.find(dosa=>dosa[1]=='dosa').forEach(dish=>console.log(dish))
+// print dosa details  find->for specific object we use find
+// foods.find(dosa=>dosa[1]=='dosa').forEach(dish=>console.log(dish))
 
-// print costly dish
-// is there any dish avai in range 50 t0 100
+// print costly dish  sort
+
+// foods.sort((d1,d2)=>d2[2]-d1[2]).forEach(dish=>console.log(dish))
+
+console.log(foods.reduce((d1,d2)=>d1[2]>d2[2]?d1:d2));
+
+
+
+// is there any dish avai in range 50 t0 100  some
 
 
